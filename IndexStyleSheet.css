@@ -1,0 +1,79 @@
+﻿body{
+	background-image:url(2.jpg);
+	}
+/*Heading*/
+ul{
+	position: -webkit-sticky;
+	position: sticky;
+	list-style-type:none;
+	margin:0px;
+	background:url(1.jpg);
+	color: black;
+	text-align: center;
+	padding: 1px;
+	font-size:150%;
+	text-shadow: 0px 4px 18px;
+	font-family: sans-serif;
+}
+
+/*Calculator*/
+#container{
+	position: fixed;
+	margin: 15px 490px;
+	width: 100%;
+	}
+
+/*Input fields*/
+#inputFields{
+	font-family: sans-serif;
+	text-align: center;
+	width:34%;
+	padding:40px;
+	font-size:25px;
+	color:black;
+	border-radius: 15px;
+	background:url(1.jpg);
+	text-shadow: 0px 1px 4px;
+	}
+
+input[type = text] {
+	box-shadow: 2px 0px 15px gray inset;
+	font-family: sans-serif;
+	width: 100%;
+	margin: 4px auto;
+	font-size: 20px;
+	padding: 4px;
+	}
+
+/*Keys and buttons*/
+
+.keys{
+	display:grid;
+	grid-template-columns: 10.2% 10.2% 10.2% 10.2% ;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px; 
+	width: 85%;
+	margin-top: 10px;
+	margin-right: 500px;
+
+	}
+
+.equal{
+	display:grid;
+	grid-template-columns: 200%;
+	grid-template-rows: 50px;
+	}
+
+button{
+	border: outset;
+	border-radius: 15%;
+	background:url(1.jpg);
+    font-size: 120%;
+    cursor: pointer;
+	border-color: white;
+	font-family: sans-serif;
+	text-shadow: 0px 1px 4px;
+}
+
+button:hover{
+    background: gray;
+}

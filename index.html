@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+ 
+	<title> Conversion Calculator </title>
+
+	<!--js File-->
+	<script 
+		type="text/javascript" src="IndexScript.js">
+	</script>
+
+	<!--css File-->
+	<link rel="StyleSheet" href="IndexStyleSheet.css">
+
+</head>
+<body>
+
+<div >
+	<ul>
+		<li><h2>Conversion Calculator</h2></li>
+	</ul>
+</div>
+
+<div id="container">
+	<!--Input and Output Fields-->
+	<form name= "input">
+	<table border="0" id="inputFields">
+		<tr>
+			<th> Binary </td> 
+			<td><input type="text" id="binNum" name="Binary" readonly></td>
+		</tr>
+		<tr>
+			<th> Hexadecimal </td> 
+			<td><input type="text" id="hexNum" name="Hexadecimal" readonly></td>
+		</tr>	
+		<tr>
+			<th> Octal </td> 
+			<td><input type="text" id="octNum" name="Octal" readonly></td>
+		</tr>
+		<tr>
+			<th> Decimal </td> 
+			<td><input type="text" id="decNum" name="Decimal" readonly></td>
+		</tr>
+	</table>
+	</form>
+
+	<!--Keys and functions-->
+	<div class="keys">
+		<button id="bin" onclick="onBinary()">Binary</button>
+		<button id="hex" onclick="onHexadecimal()">Hexadecimal</button>
+		<button id="oct" onclick="onOctal()">Octal</button>
+		<button id="dec" onclick="onDecimal()">Decimal</button>
+		<button id="9" value = "9" onclick="values(9)">9</button>
+		<button id="8" value = "8" onclick="values(8)">8</button>
+		<button id="7" value = "7" onclick="values(7)">7</button>
+		<button id="6" value = "6" onclick="values(6)">6</button>
+		<button id="5" value = "5" onclick="values(5)">5</button>
+		<button id="4" value = "4" onclick="values(4)">4</button>
+		<button id="3" value = "3" onclick="values(3)">3</button>
+		<button id="2" value = "2" onclick="values(2)">2</button>
+		<button id="1" value = "1" onclick="values(1)">1</button>
+		<button id="0" value = "0" onclick="values(0)">0</button>
+		<button id="A" value = "a" onclick="values('a')"> A </button>
+		<button id="B" value = "b" onclick="values('b')"> B </button>
+		<button id="C" value = "c" onclick="values('c')"> C </button>
+		<button id="D" value = "d" onclick="values('d')"> D </button>
+		<button id="E" value = "e" onclick="values('e')"> E </button>
+		<button id="F" value = "f" onclick="values('f')"> F </button>
+		<button id="clr" value="clr" onClick="history.go(0)"> clear </button>
+		<button id="del" value = "0" onclick="del()">del</button>
+		<div class="equal">
+			<button id="equ" value="equal" onclick="equal()">=</button>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
